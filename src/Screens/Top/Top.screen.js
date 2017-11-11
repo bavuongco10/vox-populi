@@ -2,15 +2,8 @@ import React, {Component} from 'react';
 import { StyleSheet, View, Text, FlatList } from 'react-native';
 import Touchable from 'react-native-platform-touchable';
 import shortid from 'shortid';
-import { Entypo } from '@expo/vector-icons';
 
-const ThreeDots = () => {
-	return (
-		<Touchable style={{ position: 'absolute', top: 0, right: 0}}>
-			<Entypo name="dots-three-vertical" size={32}/>
-		</Touchable>
-	)
-}
+import ThreeDots from '../../Components/ThreeDots/ThreeDots.component';
 
 export default class Top extends Component {
 	state = {
